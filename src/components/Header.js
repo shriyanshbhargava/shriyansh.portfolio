@@ -76,7 +76,7 @@ export default function Header() {
           );
         })}
         <button className="font-semibold text-lg bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
-          <a href="https://drive.google.com/drive/folders/1oj3Es_kO6Qc7N3cFHrkQZLgXyVO6Q-sd?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          <a href="https://blush-ronny-65.tiiny.site">
            <p>Resume</p> 
           </a>
         </button>
@@ -146,7 +146,7 @@ export default function Header() {
                     })}
                     <button className="font-mono bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
                       <a
-                        href="/resume.pdf"
+                        href="https://blush-ronny-65.tiiny.site"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

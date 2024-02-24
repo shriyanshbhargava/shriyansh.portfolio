@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -109,6 +108,13 @@ button {
   border-radius: 15px;
   position: relative;
   transition: all 1s ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .hero-img {
+    height: 19rem;
+    width: 19rem;
+  }
 }
 
 .hero-img:hover {
