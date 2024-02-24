@@ -1,13 +1,143 @@
+@import "./Assets/styles/tailwind.css";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  padding: 0.313rem 1.5rem;
+  color: white;
+}
+
+.nav {
+  transition: transform 150ms ease-in-out;
+}
+
+.nav-bar--hidden {
+  transform: translateY(-100%);
+  transition: transform 150ms ease-in-out;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-repeat: no-repeat;
+}
+
+.preloader-none {
+  opacity: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.logo {
+  background-position: center;
+  opacity: 0;
+  animation: fade 3s ease-in-out forwards;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  40%,
+  50%,
+  60%,
+  70% {
+    opacity: 1;
+  }
+}
+
+.underline-link {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-link:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(241 245 249);
+  content: "";
+  opacity: 0;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  transform: translateY(-5px);
+}
+
+.underline-link:focus:after,
+.underline-link:hover:after {
+  height: 1px;
+  border-radius: 4px;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.shadow-large {
+  box-shadow: -10px 0px 30px -15px rgb(2, 12, 27);
+}
+
+.hero-img {
+  height: 20rem;
+  width: 20rem;
+  background-image: url(https://i.ibb.co/1MKpksZ/compressed.jpg);
+  background-position: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #2c2f32;
+  border-radius: 15px;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.hero-img:hover {
+  animation: morph 1s ease-in 0s infinite normal none;
+}
+
+/* Copy this code after the above code */
+@keyframes morph {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
