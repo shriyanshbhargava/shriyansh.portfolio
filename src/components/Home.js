@@ -1,6 +1,4 @@
 import React from "react";
-import data from "../../Data/Data.json";
-import "../../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,7 +14,7 @@ import Github, {
   Linkedin,
   CSS,
   Mail,
-} from "../../Assets/icons";
+} from "../assets/icons";
 
 export default function Home() {
   const skillsLogo = [

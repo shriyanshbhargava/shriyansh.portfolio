@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../../Data/Data.json";
+import data from "../data/data.json";
 
 export default function NotFound() {
   return (

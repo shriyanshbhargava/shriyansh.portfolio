@@ -1,22 +1,22 @@
 import { createContext, useState, useEffect } from "react";
 
 export default function useScrollListener() {
-  const [data, setData] = useState({
+  const [data, setdata] = useState({
     x: 0,
     y: 0,
     lastX: 0,
-    lastY: 0
+    lastY: 0,
   });
 
   // set up event listeners
   useEffect(() => {
     const handleScroll = () => {
-      setData((last) => {
+      setdata((last) => {
         return {
           x: window.scrollX,
           y: window.scrollY,
           lastX: last.x,
-          lastY: last.y
+          lastY: last.y,
         };
       });
     };

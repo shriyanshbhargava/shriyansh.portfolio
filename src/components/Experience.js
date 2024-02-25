@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "../Section/Section";
-import data from "../../Data/Data.json";
+import Section from "./Section/Section";
+import data from "../data/data.json";
 
 export default function Experience() {
   const experiences = [

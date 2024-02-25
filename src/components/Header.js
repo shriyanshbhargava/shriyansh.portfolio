@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { HashLink as Link } from "react-router-hash-link";
 import useScrollListener from "../hooks/useScrollListener";
-import data from "../Data/Data.json";
-import Logo from "../Assets/icons/Logo";
+import data from "../data/data.json";
+import Logo from "../assets/icons/Logo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -77,7 +77,7 @@ export default function Header() {
         })}
         <button className="font-semibold text-lg bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
           <a href="https://blush-ronny-65.tiiny.site">
-           <p>Resume</p> 
+            <p>Resume</p>
           </a>
         </button>
       </div>

@@ -1,38 +1,40 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Loader, Layout } from "./components";
 import { Helmet } from "react-helmet";
-import data from "./Data/Data.json";
+import data from "./data/data.json";
 import useScrollAnimation from "./hooks/useScrollAnimation";
 
+import {
+  Header,
+  Home,
+  About,
+  Experience,
+  Projects,
+  Contact,
+} from "./components";
+import { BrowserRouter } from "react-router-dom";
+
 function App() {
-  // const [load, upadateLoad] = React.useState(true);
-
-  // React.useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     upadateLoad(false);
-  //   }, 3000);
-  //   return () => clearTimeout(timer);
-  // }, []);
-
   useScrollAnimation();
 
   return (
-    <>
+    <BrowserRouter>
       {/* {load ? <Loader load={load} /> : null} */}
       <div
         className={`"no-scroll" : "scroll"
         } App flex flex-col h-full bg-desert-storm-50 gap-5`}
       >
-        <BrowserRouter>
-          <Helmet>
-            <title>{data.app}</title>
-            <meta name="description" content={data.home.intro}></meta>
-          </Helmet>
-          <Layout />
-        </BrowserRouter>
+        <Helmet>
+          <title>{data.app}</title>
+          <meta name="description" content={data.home.intro}></meta>
+        </Helmet>
+        <Header />
+        <Home />
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
