@@ -150,7 +150,7 @@ export default function Header() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {data.resume}
+                        Resume
                       </a>
                     </button>
                   </div>
