@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "./Section/Section";
-import data from "../data/data.json";
+import { data } from "../constants";
 import Github, { Linkedin, Mail, Twitter } from "../assets/icons";
 
 export default function Contact() {

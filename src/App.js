@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import data from "./data/data.json";
+import { data } from "./constants";
 import useScrollAnimation from "./hooks/useScrollAnimation";
 
 import {

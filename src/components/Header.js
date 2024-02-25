@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { HashLink as Link } from "react-router-hash-link";
 import useScrollListener from "../hooks/useScrollListener";
-import data from "../data/data.json";
+import { data } from "../constants";
 import Logo from "../assets/icons/Logo";
 
 export default function Header() {

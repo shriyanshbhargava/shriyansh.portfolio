@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data/data.json";
+import { data } from "../constants";
 import Section from "./Section/Section";
 import { Folder, Link } from "../assets/icons";
 export default function Projects() {
