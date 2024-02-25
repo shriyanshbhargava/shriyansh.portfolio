@@ -1,7 +1,7 @@
 export { default as Header } from "./Header";
 export { default as Layout } from "./Layout";
 export { default as Loader } from "./Loader";
-export { default as Section } from "./section/Section";
+export { default as Section } from "./Section/Section";
 export { default as About } from "./pages/About";
 export { default as Contact } from "./pages/Contact";
 export { default as Experience } from "./pages/Experience";

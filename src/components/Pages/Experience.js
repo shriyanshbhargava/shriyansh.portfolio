@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../section/Section";
+import Section from "../Section/Section";
 import data from "../../Data/Data.json";
 
 export default function Experience() {

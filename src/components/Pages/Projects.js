@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../Data/Data.json";
-import Section from "../section/Section";
+import Section from "../Section/Section";
 import { Folder, Link } from "../../Assets/icons";
 export default function Projects() {
   const projects = [
