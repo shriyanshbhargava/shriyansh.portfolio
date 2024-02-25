@@ -68,14 +68,3 @@ export default function Projects() {
     </Section>
   );
 }
-
-/**
- *
- * remove unused code
- * convert repeatable code to .map
- * responsiveness
- * all icons should be inside Svgs
- * all folder names should start from lowercase
- * convert data.json to utils/constants
- * replace favicon with S. icon
- */
