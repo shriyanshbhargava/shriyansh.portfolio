@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section/Section";
 import { data } from "../constants";
-import Github, { Linkedin, Mail, Twitter } from "../assets/icons";
+import { Github, Linkedin, Mail, Twitter } from "../assets/icons";
 
 export default function Contact() {
   const links = [

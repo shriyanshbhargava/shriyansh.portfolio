@@ -2,8 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-import Github, {
+import {
   BOOTSTRAP,
+  Github,
   HTML,
   JS,
   NextJS,
