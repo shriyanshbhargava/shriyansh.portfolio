@@ -1,8 +1,7 @@
 import React from "react";
-import Section from "../Section/Section";
+import Section from "../section/Section";
 import data from "../../Data/Data.json";
-import Github from "../../Assets/icons/Github";
-import Mail from "../../Assets/icons/Mail";
+import Github, { Linkedin, Mail, Twitter } from "../../Assets/icons";
 
 export default function Contact() {
   const links = [
@@ -13,6 +12,16 @@ export default function Contact() {
     },
     {
       id: 1,
+      icon: <Linkedin />,
+      href: "https://www.linkedin.com/in/shriyansh-bhargava-7483b7179/",
+    },
+    {
+      id: 2,
+      icon: <Twitter />,
+      href: "https://twitter.com/Shriyanshhh_",
+    },
+    {
+      id: 3,
       icon: <Mail />,
       href: "mailto:shriyansh.feb@gmail.com",
     },
@@ -32,7 +41,7 @@ export default function Contact() {
           <p className="mt-2 text-mine-shaft-950">{data.app}</p>
         </div>
 
-        <div className="flex lg:gap-10 md:gap-10 justify-between items-center">
+        <div className="flex sm:pt-7 md:pt-1 lg:gap-5 md:gap-5 justify-between items-center">
           {links.map((link) => {
             return (
               <a

@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section/Section";
+import Section from "../section/Section";
 import data from "../../Data/Data.json";
 
 export default function Experience() {
@@ -17,7 +17,7 @@ export default function Experience() {
       name: "MU Arts Club",
       href: "https://",
       desc: "Managed and updated website content as a WordPress developer. Proficient in WordPress CMS, ensured optimal user experience. Provided technical support .",
-      designation:"WordPress Developer",
+      designation: "WordPress Developer",
       year: "Mar 2021 — Jan 2023",
     },
     {

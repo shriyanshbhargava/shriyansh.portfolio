@@ -1,8 +1,7 @@
 import React from "react";
 import data from "../../Data/Data.json";
-import Section from "../Section/Section";
-import Link from "../../Assets/icons/Link";
-import Folder from "../../Assets/icons/Folder";
+import Section from "../section/Section";
+import { Folder, Link } from "../../Assets/icons";
 export default function Projects() {
   const projects = [
     {
@@ -70,9 +69,8 @@ export default function Projects() {
   );
 }
 
-
 /**
- * 
+ *
  * remove unused code
  * convert repeatable code to .map
  * responsiveness

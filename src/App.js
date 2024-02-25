@@ -6,23 +6,22 @@ import data from "./Data/Data.json";
 import useScrollAnimation from "./hooks/useScrollAnimation";
 
 function App() {
-  const [load, upadateLoad] = React.useState(true);
+  // const [load, upadateLoad] = React.useState(true);
 
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
+  // React.useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     upadateLoad(false);
+  //   }, 3000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   useScrollAnimation();
 
   return (
     <>
-      {load ? <Loader load={load} /> : null}
+      {/* {load ? <Loader load={load} /> : null} */}
       <div
-        className={`${
-          load ? "no-scroll" : "scroll"
+        className={`"no-scroll" : "scroll"
         } App flex flex-col h-full bg-desert-storm-50 gap-5`}
       >
         <BrowserRouter>

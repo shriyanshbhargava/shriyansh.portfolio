@@ -4,8 +4,25 @@
   color-scheme: dark;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
+} */
+
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #96a5a5;
 }
 
 body {
@@ -18,6 +35,22 @@ button {
   padding: 0.313rem 1.5rem;
   color: white;
 }
+
+/* .loading {
+  display: none;
+}
+
+.loading::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(71, 12, 12);
+  z-index: 999;
+} */
 
 .nav {
   transition: transform 150ms ease-in-out;
@@ -42,10 +75,11 @@ button {
   opacity: 0;
 }
 
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
   height: 100vh;
 }
+ */
 
 .logo {
   background-position: center;

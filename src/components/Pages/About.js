@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../Section/Section";
+import Section from "../section/Section";
 
 import data from "../../Data/Data.json";
 
