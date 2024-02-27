@@ -6,27 +6,34 @@ export default function Projects() {
   const projects = [
     {
       id: 0,
+      title: "To Do With MERN",
+      link: "https://yuvraj-repo-2.vercel.app/",
+      desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
+      tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
+    },
+    {
+      id: 1,
       title: "Yuvraj Crackers",
       link: "https://yuvraj-repo-2.vercel.app/",
       desc: "A Freelance Ecommerce Project App with Product Listing & Admin Panel to Add/Modify Orders/Customers/Products.      ",
       tech: ["JavaScript / React / React Router / Tailwind CSS"],
     },
     {
-      id: 1,
+      id: 2,
       title: "Ecommerce-Clone",
       link: "https://github.com/shriyanshbhargava/ecommerce-clone",
       desc: "A Ecommerce React App with Features like Sign In/Register, Cart & Filter",
       tech: ["JavaScript / React / React Router / Tailwind CSS"],
     },
     {
-      id: 2,
+      id: 3,
       title: "The Learnest",
       link: "https://github.com/shriyanshbhargava/TheLearnest",
       desc: "The website served as a promotional platform, redirecting Instagram traffic to the website for further engagement.",
       tech: ["JavaScript / HTML / CSS"],
     },
     {
-      id: 3,
+      id: 4,
       title: "Component Library",
       link: "https://github.com/shriyanshbhargava/component-library",
       desc: "Made A Small Component Library for my personal use.      ",
