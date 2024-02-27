@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { data } from "./constants";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import useScrollAnimation from "./hooks/useScrollAnimation";
 
 import {
@@ -33,6 +34,7 @@ function App() {
         <Projects />
         <Experience />
         <Contact />
+        <SpeedInsights />
       </div>
     </BrowserRouter>
   );
