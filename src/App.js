@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { data } from "./constants";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 import useScrollAnimation from "./hooks/useScrollAnimation";
 
 import {
@@ -35,6 +36,7 @@ function App() {
         <Experience />
         <Contact />
         <SpeedInsights />
+        <Analytics />
       </div>
     </BrowserRouter>
   );
