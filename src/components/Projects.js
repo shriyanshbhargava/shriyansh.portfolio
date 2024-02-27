@@ -7,7 +7,7 @@ export default function Projects() {
     {
       id: 0,
       title: "To Do With MERN",
-      link: "https://yuvraj-repo-2.vercel.app/",
+      link: "https://github.com/shriyanshbhargava/todo-mern",
       desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
       tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
     },
