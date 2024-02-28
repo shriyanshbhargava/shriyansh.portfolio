@@ -17,8 +17,8 @@ export default function About() {
     "Github",
     "Postman",
     "Figma",
-    // "MongoDB (Beginner)",
-    // "NodeJS (Beginner)",
+    "MongoDB (Beginner)",
+    "NodeJS (Beginner)",
   ];
 
   return (
@@ -30,11 +30,10 @@ export default function About() {
       <div className="flex flex-col gap-5 text-md leading-6 text-mine-shaft-950">
         <p>
           Hey! 👋 I'm a freelancer passionate about crafting seamless digital
-          experiences. Currently, I'm pursuing MCA at SGSITS Indore,
-          combining academic insights with hands-on expertise. My focus is on
-          building scalable applications with engaging user interfaces. Let's
-          connect and explore the exciting intersection of technology and
-          creativity! 🌐💻
+          experiences. Currently, I'm pursuing MCA at SGSITS Indore, combining
+          academic insights with hands-on expertise. My focus is on building
+          scalable applications with engaging user interfaces. Let's connect and
+          explore the exciting intersection of technology and creativity! 🌐💻
         </p>
         <p>{data.about.skills}</p>
 
