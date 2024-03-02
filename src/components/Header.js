@@ -78,9 +78,9 @@ export default function Header() {
           );
         })}
         <button className="font-semibold text-lg bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
-          <a href={resumeLink}>
+          <Link to={resumeLink} target="_blank">
             <p>Resume</p>
-          </a>
+          </Link>
         </button>
       </div>
 
@@ -147,13 +147,13 @@ export default function Header() {
                       );
                     })}
                     <button className="font-mono bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
-                      <a
-                        href={resumeLink}
+                      <Link
+                        to={resumeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Resume
-                      </a>
+                      </Link>
                     </button>
                   </div>
                 </div>
