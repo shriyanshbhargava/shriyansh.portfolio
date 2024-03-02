@@ -9,6 +9,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [navClassList, setNavClassList] = React.useState([]);
   const scroll = useScrollListener();
+  const resumeLink =
+    "https://drive.google.com/file/d/1nZhQlq0NIRzUFNo5ukpUlFGL7e_Pll7n/view?usp=drive_link";
 
   function openModal() {
     setIsOpen(true);
@@ -76,7 +78,7 @@ export default function Header() {
           );
         })}
         <button className="font-semibold text-lg bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
-          <a href="https://blush-ronny-65.tiiny.site">
+          <a href={resumeLink}>
             <p>Resume</p>
           </a>
         </button>
@@ -146,7 +148,7 @@ export default function Header() {
                     })}
                     <button className="font-mono bg-slate-900 hover:bg-slate-800 border-2 border-mine-shaft-950 text-mine-shaft-950 rounded-lg">
                       <a
-                        href="https://blush-ronny-65.tiiny.site"
+                        href={resumeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
