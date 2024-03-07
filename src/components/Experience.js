@@ -47,20 +47,24 @@ export default function Experience() {
                   href={experience.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="underline-link cursor-pointer text-xl text-slate-100"
+                  className="underline-link cursor-pointer text-xl text-slate-100 font-bold"
                 >
                   {experience.name}
                 </a>
               </h1>
-              <code className="text-sm text-slate-400">{experience.year}</code>
+              <code className="text-sm text-slate-400 font-bold">
+                {experience.year}
+              </code>
             </div>
             <div className="mt-1">
-              <span className="text-md text-slate-300">
+              <span className="text-md text-slate-300 font-bold">
                 {experience.designation}
               </span>
             </div>
             <div className="mt-4">
-              <span className="text-md text-slate-400">{experience.desc}</span>
+              <span className="text-md text-slate-400 font-normal">
+                {experience.desc}
+              </span>
             </div>
           </div>
         );

@@ -68,12 +68,14 @@ export default function Projects() {
                 </a>
               </div>
               <div className="flex flex-col gap-2">
-                <h1 className="text-white text-xl">{project.title}</h1>
-                <span>{project.desc}</span>
-                <code className="mt-5 text-sm text-slate-300">
+                <h1 className="text-white text-xl font-extrabold">
+                  {project.title}
+                </h1>
+                <span className="font-normal">{project.desc}</span>
+                <span className="mt-5 text-sm text-slate-300 font-bold">
                   {" "}
                   {project.tech}
-                </code>
+                </span>
               </div>
             </div>
           );
