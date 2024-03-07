@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       id: 0,
-      title: "ToDo With MERN (Underway)",
+      title: "ToDo With MERN",
       link: "https://github.com/shriyanshbhargava/todo-mern",
       desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
       tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
@@ -20,20 +20,27 @@ export default function Projects() {
     },
     {
       id: 2,
+      title: "Notion CLone",
+      link: "https://notion-clone-lilac.vercel.app/",
+      desc: "I was tasked with creating a website that functions as a clone of Notion.",
+      tech: ["React / Tailwind CSS"],
+    },
+    {
+      id: 3,
       title: "Ecommerce-Clone",
       link: "https://github.com/shriyanshbhargava/ecommerce-clone",
       desc: "A Ecommerce React App with Features like Sign In/Register, Cart & Filter",
       tech: ["JavaScript / React / React Router / Tailwind CSS"],
     },
     {
-      id: 3,
+      id: 4,
       title: "The Learnest",
       link: "https://github.com/shriyanshbhargava/TheLearnest",
       desc: "The website served as a promotional platform, redirecting Instagram traffic to the website for further engagement.",
       tech: ["JavaScript / HTML / CSS"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Component Library",
       link: "https://github.com/shriyanshbhargava/component-library",
       desc: "Made A Small Component Library for my personal use.      ",
