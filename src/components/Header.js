@@ -10,7 +10,7 @@ export default function Header() {
   const [navClassList, setNavClassList] = React.useState([]);
   const scroll = useScrollListener();
   const resumeLink =
-    "https://drive.google.com/file/d/1yZg2Eg_3M7gDFIf0XTjhaM9WMT-IoAWG/view?usp=drive_link";
+    "https://drive.google.com/file/d/1ijXZ1rDn1wNFGpuahPdT-JFhzGxzDDx1/view?usp=sharing";
 
   function openModal() {
     setIsOpen(true);
