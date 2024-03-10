@@ -10,7 +10,7 @@ export default function Experience() {
       href: "https://www.thetfpl.com/",
       designation: "Frontend Developer",
       desc: "Developed proficiency in front-end development for e-commerce websites also crafting tailored solutions for client-specific platforms. Committed to delivering visually appealing websites that enhance user engagement.",
-      year: "Dec 2022 — Present",
+      year: "Dec 2022 - Present",
     },
     {
       id: 1,
@@ -18,7 +18,7 @@ export default function Experience() {
       href: "https://",
       desc: "Managed and updated website content as a WordPress developer. Proficient in WordPress CMS, ensured optimal user experience. Provided technical support .",
       designation: "WordPress Developer",
-      year: "Mar 2021 — Jan 2023",
+      year: "Mar 2021 - Jan 2023",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export default function Experience() {
       href: "https://",
       desc: "Implemented designs, gained experience in translating creative concepts, collaborated with clients and team members to deliver satisfactory design solutions.",
       designation: "Executive Member",
-      year: "Oct 2021 — Dec 2022",
+      year: "Oct 2021 - Dec 2022",
     },
   ];
   return (
