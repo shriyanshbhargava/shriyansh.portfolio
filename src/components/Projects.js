@@ -27,7 +27,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Notion CLone",
+      title: "Notion Clone",
       link: "https://notion-clone-lilac.vercel.app/",
       desc: "I was tasked with creating a website that functions as a clone of Notion.",
       tech: ["React / Tailwind CSS"],
