@@ -5,7 +5,7 @@ import { data } from "../constants";
 
 export default function About() {
   const skills = [
-    "JavaScript (ES6+)",
+    "JavaScript",
     "React",
     "NextJS",
     "Bootstrap",
@@ -17,8 +17,8 @@ export default function About() {
     "Github",
     "Postman",
     "Figma",
-    "MongoDB (Beginner)",
-    "NodeJS (Beginner)",
+    "MongoDB",
+    "NodeJS",
   ];
 
   return (
