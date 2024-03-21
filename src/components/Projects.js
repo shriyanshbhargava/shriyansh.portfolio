@@ -41,7 +41,7 @@ export default function Projects() {
     },
     {
       id: 5,
-      title: "ToDo With MERN",
+      title: "To Do App With MERN",
       link: "https://github.com/shriyanshbhargava/todo-mern",
       desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
       tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
