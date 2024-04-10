@@ -41,13 +41,20 @@ export default function Projects() {
     },
     {
       id: 5,
-      title: "To Do App With MERN",
+      title: "ToDo App With MERN",
       link: "https://github.com/shriyanshbhargava/todo-mern",
       desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
       tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
     },
     {
       id: 6,
+      title: "React Bug Watch",
+      link: "https://github.com/shriyanshbhargava/React-Bug-Watch",
+      desc: "Simplify bug reporting in your React app. Take quick snapshots of webpage bugs for easy reporting and resolution.      ",
+      tech: ["React / Tailwind CSS"],
+    },
+    {
+      id: 7,
       title: "LinkInBio (Underway)",
       link: "https://github.com/shriyanshbhargava/linkinbio-Frontend",
       desc: "Everything you are. In one, simple link in bio.      ",
