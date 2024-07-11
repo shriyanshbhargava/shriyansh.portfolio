@@ -3,7 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { HashLink as Link } from "react-router-hash-link";
 import useScrollListener from "../hooks/useScrollListener";
 import { data } from "../constants";
-import Logo from "../assets/icons/Logo";
+import Logo from "../Assets/icons/Logo";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -16,8 +16,6 @@ export default function Header() {
   function openModal() {
     setIsOpen(true);
   }
-
-
 
   const navs = [
     {
@@ -42,7 +40,6 @@ export default function Header() {
     },
   ];
 
-  // update classList of nav on scroll
   React.useEffect(() => {
     const _classList = [];
 

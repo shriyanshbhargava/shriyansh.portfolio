@@ -1,7 +1,7 @@
 import React from "react";
 import { data } from "../constants";
 import Section from "./Section/Section";
-import { Folder, Link } from "../assets/icons";
+import { Folder, Link } from "../Assets/icons";
 export default function Projects() {
   const projects = [
     // {
@@ -59,6 +59,13 @@ export default function Projects() {
       link: "https://github.com/shriyanshbhargava/linkinbio-Frontend",
       desc: "Everything you are. In one, simple link in bio.      ",
       tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
+    },
+    {
+      id: 8,
+      title: "Intract Clone",
+      link: "https://star-portal-assignment.vercel.app",
+      desc: "I was tasked with creating a website that functions as a clone of Web3 Website.",
+      tech: ["React / Tailwind CSS"],
     },
   ];
 

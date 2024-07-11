@@ -15,7 +15,7 @@ import {
   Linkedin,
   CSS,
   Mail,
-} from "../assets/icons";
+} from "../Assets/icons";
 
 export default function Home() {
   const skillsLogo = [
