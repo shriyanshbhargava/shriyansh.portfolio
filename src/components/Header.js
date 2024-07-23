@@ -57,7 +57,7 @@ export default function Header() {
     <div
       className={`${navClassList.join(
         " "
-      )} nav sticky sm:fixed top-0 z-40 w-full lg:py-5 lg:px-10 md:p-10 sm:p-7 flex justify-between items-center shadow-lg backdrop-blur flex-none transition-colors duration-500 border-[#C5DFDE]/[0.06] bg-[#C5DFDE]`}
+      )} nav sticky sm:fixed top-0 z-40 w-full lg:py-5 lg:px-10 md:p-10 sm:p-7 flex justify-between items-center shadow-lg backdrop-filter backdrop-blur-[5px] border-b-[1px] flex-none transition-colors duration-500 border-[rgba(255,_255,_255,_.15)] pb-8 bg-[rgba(255,_255,_255,_.50)]`}
     >
       <div className="md:flex md:w-full sm:flex sm:w-full">
         <div className="cursor-pointer" onClick={refresh}>
