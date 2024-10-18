@@ -67,6 +67,13 @@ export default function Projects() {
       desc: "I was tasked with creating a website that functions as a clone of Web3 Website.",
       tech: ["React / Tailwind CSS"],
     },
+    {
+      id: 9,
+      title: "RateItUp",
+      link: "https://github.com/shriyanshbhargava/RateItUp",
+      desc: "A full-stack web app for rating and reviewing movies, using modern technologies for a smooth and efficient experience.",
+      tech: ["Next.js / TypeScript / Tailwind CSS / tRPC / Zod / Prisma / PostgreSQL"],
+    },
   ];
 
   const reversedArray = projects.slice().reverse();

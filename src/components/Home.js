@@ -75,12 +75,12 @@ export default function Home() {
       >
         <div className="flex flex-col justify-center  py-10 gap-6  sm:pt-8 p-8">
           <h1 className="md:max-w-lg sm:w-full font-bold text-mine-shaft-950 lg:text-6xl md:text-6xl sm:text-4xl ">
-            Front-End React Developer.
+            Full Stack Developer.
           </h1>
 
           <p className="text-lg md:max-w-lg sm:w-full mx-auto text-mine-shaft-950 sm:text-base">
-            Hi, I'm Shriyansh Bhargava. A passionate Front-end React Developer
-            based in Indore, India. <FontAwesomeIcon icon={faLocationDot} />
+            Hi, I'm Shriyansh Bhargava. A passionate Full Stack Developer based
+            in Indore, India. <FontAwesomeIcon icon={faLocationDot} />
           </p>
           <span className="flex p-2">
             {links.map((link) => (

@@ -11,7 +11,7 @@ export default function Header() {
   const scroll = useScrollListener();
   //resumeLink
   const resumeLink =
-    "https://drive.google.com/file/d/17LfSu8S6lcRVB-_4zhx_FamIh5WIxWa8/view?usp=drive_link";
+    "https://drive.google.com/file/d/1hSm1wrTll0EsZuS26o2EcR4mEZ-rvZ_1/view?usp=sharing";
 
   function openModal() {
     setIsOpen(true);

@@ -6,19 +6,19 @@ import { data } from "../constants";
 export default function About() {
   const skills = [
     "JavaScript",
+    "TypeScript",
     "React",
     "NextJS",
     "Bootstrap",
     "Tailwind CSS",
-    "Firebase",
-    "HTML",
-    "CSS/Sass",
-    "Git",
-    "Github",
-    "Postman",
-    "Figma",
+    "Git & GitHub",
     "MongoDB",
     "NodeJS",
+    "Express",
+    "tRPC",
+    "Prisma",
+    "Postman",
+    "Docker",
   ];
 
   return (
