@@ -63,7 +63,7 @@ export default function Projects() {
     {
       id: 8,
       title: "Intract Clone",
-      link: "https://star-portal-assignment.vercel.app",
+      link: "https://intract-clone-gamma.vercel.app/",
       desc: "I was tasked with creating a website that functions as a clone of Web3 Website.",
       tech: ["React / Tailwind CSS"],
     },
@@ -72,7 +72,9 @@ export default function Projects() {
       title: "RateItUp",
       link: "https://github.com/shriyanshbhargava/RateItUp",
       desc: "A full-stack web app for rating and reviewing movies, using modern technologies for a smooth and efficient experience.",
-      tech: ["Next.js / TypeScript / Tailwind CSS / tRPC / Zod / Prisma / PostgreSQL"],
+      tech: [
+        "Next.js / TypeScript / Tailwind CSS / tRPC / Zod / Prisma / PostgreSQL",
+      ],
     },
   ];
 
