@@ -34,6 +34,7 @@ export default function About() {
           academic insights with hands-on expertise. My focus is on building
           scalable applications with engaging user interfaces. Let's connect and
           explore the exciting intersection of technology and creativity! 🌐💻
+
         </p>
         <p>{data.about.skills}</p>
 

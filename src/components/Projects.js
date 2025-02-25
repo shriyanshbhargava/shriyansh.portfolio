@@ -39,13 +39,13 @@ export default function Projects() {
       desc: "A Freelance Ecommerce Project App with Product Listing & Admin Panel to Add/Modify Orders/Customers/Products.      ",
       tech: ["JavaScript / React / React Router / Tailwind CSS"],
     },
-    {
-      id: 5,
-      title: "ToDo App With MERN",
-      link: "https://github.com/shriyanshbhargava/todo-mern",
-      desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
-      tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
-    },
+    // {
+    //   id: 5,
+    //   title: "ToDo App With MERN",
+    //   link: "https://github.com/shriyanshbhargava/todo-mern",
+    //   desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
+    //   tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
+    // },
     {
       id: 6,
       title: "React Bug Watch",
@@ -53,13 +53,13 @@ export default function Projects() {
       desc: "Simplify bug reporting in your React app. Take quick snapshots of webpage bugs for easy reporting and resolution.      ",
       tech: ["React / Tailwind CSS"],
     },
-    {
-      id: 7,
-      title: "LinkInBio (Underway)",
-      link: "https://github.com/shriyanshbhargava/linkinbio-Frontend",
-      desc: "Everything you are. In one, simple link in bio.      ",
-      tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
-    },
+    // {
+    //   id: 7,
+    //   title: "LinkInBio (Underway)",
+    //   link: "https://github.com/shriyanshbhargava/linkinbio-Frontend",
+    //   desc: "Everything you are. In one, simple link in bio.      ",
+    //   tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
+    // },
     {
       id: 8,
       title: "Intract Clone",
@@ -69,12 +69,26 @@ export default function Projects() {
     },
     {
       id: 9,
+      title: "TaskFlow ToDo",
+      link: "https://github.com/shriyanshbhargava/Taskflow-ToDo",
+      desc: "The application includes CRUD operations for tasks, drag-and-drop functionality, and state persistence.",
+      tech: ["Next.js / TypeScript / Tailwind CSS/ Zustand "],
+    },
+    {
+      id: 9,
       title: "RateItUp",
       link: "https://github.com/shriyanshbhargava/RateItUp",
       desc: "A full-stack web app for rating and reviewing movies, using modern technologies for a smooth and efficient experience.",
       tech: [
         "Next.js / TypeScript / Tailwind CSS / tRPC / Zod / Prisma / PostgreSQL",
       ],
+    },
+    {
+      id: 9,
+      title: "Timeline Calendar",
+      link: "https://github.com/shriyanshbhargava/guestara-assignment/",
+      desc: "The application includes event creation, dragging functionality, and state persistence.",
+      tech: ["Next.js / TypeScript / Tailwind CSS "],
     },
   ];
 

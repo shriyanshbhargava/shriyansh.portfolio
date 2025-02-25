@@ -23,7 +23,7 @@ function App() {
       {/* {load ? <Loader load={load} /> : null} */}
       <div
         className={`"no-scroll" : "scroll"
-        } App flex flex-col h-full bg-desert-storm-50 gap-5`}
+        } App flex flex-col h-full bg-desert-storm-50 `}
       >
         <Helmet>
           <title>{data.app}</title>
@@ -32,8 +32,8 @@ function App() {
         <Header />
         <Home />
         <About />
-        <Projects />
         <Experience />
+        <Projects />
         <Contact />
         <SpeedInsights />
         <Analytics />

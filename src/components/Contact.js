@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section/Section";
 import { data } from "../constants";
-import { Github, Linkedin, Mail, Twitter } from "../Assets/icons/index";
+import { Calendar, Github, Linkedin, Mail, Twitter } from "../Assets/icons/index";
 
 export default function Contact() {
   const links = [
@@ -24,6 +24,12 @@ export default function Contact() {
       id: 3,
       icon: <Mail />,
       href: "mailto:shriyansh.feb@gmail.com",
+    },
+    {
+      id: 4,
+      label: "calendar",
+      href: "https://calendly.com/shriyanshbhargava/1-1-meeting",
+      icon: <Calendar />,
     },
   ];
   return (
@@ -49,6 +55,7 @@ export default function Contact() {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
+                className="icon-hover"
               >
                 {link.icon}
               </a>

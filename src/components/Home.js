@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import "./Home.css";
 
 import {
   BOOTSTRAP,
@@ -15,6 +16,7 @@ import {
   Linkedin,
   CSS,
   Mail,
+  Calendar,
 } from "../Assets/icons";
 
 export default function Home() {
@@ -62,6 +64,14 @@ export default function Home() {
       href: "mailto:shriyansh.feb@gmail.com",
       icon: <Mail />,
     },
+    {
+      id: 2,
+      label: "calendar",
+      target: "_blank",
+      rel: "noreferrer",
+      href: "https://calendly.com/shriyanshbhargava/1-1-meeting",
+      icon: <Calendar />,
+    },
   ];
 
   return (
@@ -74,15 +84,18 @@ export default function Home() {
         id="#"
       >
         <div className="flex flex-col justify-center  py-10 gap-6  sm:pt-8 p-8">
+          <h6 className="md:max-w-lg sm:w-full font-bold text-mine-shaft-950 lg:text-3xl md:text-3xl sm:text-2xl ">
+            I'm
+          </h6>
           <h1 className="md:max-w-lg sm:w-full font-bold text-mine-shaft-950 lg:text-6xl md:text-6xl sm:text-4xl ">
-            Full Stack Developer.
+            Shriyansh Bhargava.
           </h1>
 
           <p className="text-lg md:max-w-lg sm:w-full mx-auto text-mine-shaft-950 sm:text-base">
-            Hi, I'm Shriyansh Bhargava. A passionate Full Stack Developer based
-            in Indore, India. <FontAwesomeIcon icon={faLocationDot} />
+            A Frontend Developer based in Indore, India.{" "}
+            <FontAwesomeIcon icon={faLocationDot} />
           </p>
-          <span className="flex p-2">
+          <span className="flex gap-3">
             {links.map((link) => (
               <a
                 key={link.id}
@@ -90,6 +103,7 @@ export default function Home() {
                 rel={link.rel}
                 target={link.target}
                 href={link.href}
+                className="icon-hover"
               >
                 {link.icon}
               </a>
@@ -106,14 +120,14 @@ export default function Home() {
           <div className="md:flex sm:flex">
             {skillsLogo.slice(0, 4).map((skill) => (
               <ul className="flex" key={skill.id}>
-                <li className="p-1">{skill.icon}</li>
+                <li className="p-1 icon-hover">{skill.icon}</li>
               </ul>
             ))}
           </div>
           <div className="md:flex sm:flex">
             {skillsLogo.slice(4).map((skill) => (
               <ul className="flex" key={skill.id}>
-                <li className="p-1">{skill.icon}</li>
+                <li className="p-1 icon-hover">{skill.icon}</li>
               </ul>
             ))}
           </div>
