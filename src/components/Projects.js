@@ -1,98 +1,51 @@
 import React from "react";
 import { data } from "../constants";
 import Section from "./Section/Section";
-import { Folder, Link } from "../Assets/icons";
+import { Folder, GithubSmall, Link } from "../Assets/icons";
+
 export default function Projects() {
   const projects = [
-    // {
-    //   id: 0,
-    //   title: "Component Library",
-    //   link: "https://github.com/shriyanshbhargava/component-library",
-    //   desc: "Made A Small Component Library for my personal use.      ",
-    //   tech: ["JavaScript / HTML / CSS"],
-    // },
     {
       id: 1,
-      title: "The Learnest",
-      link: "https://github.com/shriyanshbhargava/TheLearnest",
-      desc: "The website served as a promotional platform, redirecting Instagram traffic to the website for further engagement.",
-      tech: ["JavaScript / HTML / CSS"],
-    },
-    {
-      id: 2,
-      title: "Ecommerce-Clone",
-      link: "https://github.com/shriyanshbhargava/ecommerce-clone",
-      desc: "A Ecommerce React App with Features like Sign In/Register, Cart & Filter",
-      tech: ["JavaScript / React / React Router / Tailwind CSS"],
-    },
-    {
-      id: 3,
-      title: "Notion Clone",
-      link: "https://notion-clone-lilac.vercel.app/",
-      desc: "I was tasked with creating a website that functions as a clone of Notion.",
-      tech: ["React / Tailwind CSS"],
-    },
-    {
-      id: 4,
-      title: "Yuvraj Crackers",
-      link: "https://yuvraj-repo-2.vercel.app/",
-      desc: "A Freelance Ecommerce Project App with Product Listing & Admin Panel to Add/Modify Orders/Customers/Products.      ",
-      tech: ["JavaScript / React / React Router / Tailwind CSS"],
-    },
-    // {
-    //   id: 5,
-    //   title: "ToDo App With MERN",
-    //   link: "https://github.com/shriyanshbhargava/todo-mern",
-    //   desc: "A concise To-Do app built with MERN stack, featuring CRUD operations for task management.      ",
-    //   tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
-    // },
-    {
-      id: 6,
-      title: "React Bug Watch",
-      link: "https://github.com/shriyanshbhargava/React-Bug-Watch",
-      desc: "Simplify bug reporting in your React app. Take quick snapshots of webpage bugs for easy reporting and resolution.      ",
-      tech: ["React / Tailwind CSS"],
-    },
-    // {
-    //   id: 7,
-    //   title: "LinkInBio (Underway)",
-    //   link: "https://github.com/shriyanshbhargava/linkinbio-Frontend",
-    //   desc: "Everything you are. In one, simple link in bio.      ",
-    //   tech: ["MongoDB / ExpressJS / React / NodeJS / Tailwind CSS"],
-    // },
-    {
-      id: 8,
-      title: "Intract Clone",
-      link: "https://intract-clone-gamma.vercel.app/",
-      desc: "I was tasked with creating a website that functions as a clone of Web3 Website.",
-      tech: ["React / Tailwind CSS"],
-    },
-    {
-      id: 9,
-      title: "TaskFlow ToDo",
-      link: "https://github.com/shriyanshbhargava/Taskflow-ToDo",
-      desc: "The application includes CRUD operations for tasks, drag-and-drop functionality, and state persistence.",
-      tech: ["Next.js / TypeScript / Tailwind CSS/ Zustand "],
-    },
-    {
-      id: 9,
       title: "RateItUp",
       link: "https://github.com/shriyanshbhargava/RateItUp",
-      desc: "A full-stack web app for rating and reviewing movies, using modern technologies for a smooth and efficient experience.",
+      liveDemo: "https://rate-it-up.vercel.app/",
+      desc: "Built a movie review app with React and TypeScript supporting full CRUD for movies and reviews. Used Prisma with SQL to manage relational data and auto-calculate average movie ratings. Designed a responsive UI with Tailwind CSS, including search, detail views, and real-time updates.",
       tech: [
-        "Next.js / TypeScript / Tailwind CSS / tRPC / Zod / Prisma / PostgreSQL",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "tRPC",
+        "Zod",
+        "Prisma",
+        "PostgreSQL",
       ],
     },
     {
-      id: 9,
+      id: 2,
+      title: "Osmo Supply Clone & LiveKit Integration",
+      link: "https://github.com/shriyanshbhargava/phonio-assignment",
+      liveDemo: "https://phonio-assignment-rosy.vercel.app/",
+      desc: "Cloned the Hero and Testimonials sections of Osmo Supply with pixel-perfect UI and responsive design. Integrated LiveKit Video Calling with pop-up, PiP mode, and dedicated Sales Agent dashboard. Built Incremental Static Regeneration (ISR) with 5-hour rebuild cycles and manual revalidation API. Deployed on Vercel with real-time console logs for server build times.",
+      tech: ["Next.js", "React", "LiveKit", "JavaScript"],
+    },
+    {
+      id: 3,
       title: "Timeline Calendar",
-      link: "https://github.com/shriyanshbhargava/guestara-assignment/",
-      desc: "The application includes event creation, dragging functionality, and state persistence.",
-      tech: ["Next.js / TypeScript / Tailwind CSS "],
+      link: "https://github.com/shriyanshbhargava/guestara-assignment",
+      liveDemo: "https://guestara-assignment-green.vercel.app",
+      desc: "Engineered a Mobiscroll-inspired calendar with drag-and-drop event management and persistent state storage. Implemented complex UI features including timeline selection, event creation, and cross-date event dragging. Built a responsive layout with dynamic resource allocation and intuitive navigation between months.",
+      tech: ["React", "Vite", "CSS", "Local Storage"],
+    },
+    {
+      id: 4,
+      title: "Intract Clone",
+      link: "https://github.com/shriyanshbhargava/intract-clone",
+      liveDemo: "https://intract-clone-gamma.vercel.app/",
+      desc: "Developed the frontend of a Web3 website clone. Implemented interactive quest cards with progress tracking and reward systems to enhance user engagement. Built responsive navigation components and modular UI elements for seamless cross-device compatibility.",
+      tech: ["React", "Tailwind CSS"],
     },
   ];
-
-  const reversedArray = projects.slice().reverse();
 
   return (
     <Section
@@ -101,7 +54,7 @@ export default function Projects() {
       title={data.projects.projectsTitle}
     >
       <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-10 text-md leading-6 text-slate-400">
-        {reversedArray.map((project) => {
+        {projects.map((project) => {
           return (
             <div
               className="grid gap-7 p-6 bg-[#C5DFDE] shadow-lg rounded-lg"
@@ -109,19 +62,34 @@ export default function Projects() {
             >
               <div className="flex items-center justify-between">
                 <Folder />
-                <a href={project.link} target="_blank" rel="noreferrer">
-                  <Link />
-                </a>
+                <div className="flex gap-3">
+                  <a href={project.link} target="_blank" rel="noreferrer">
+                    <GithubSmall />
+                  </a>
+                  {project.liveDemo && (
+                    <a href={project.liveDemo} target="_blank" rel="noreferrer">
+                      <span className="text-sm text-white bg-blue-500 rounded hover:bg-blue-600 transition-colors">
+                        <Link />
+                      </span>
+                    </a>
+                  )}
+                </div>
               </div>
               <div className="flex flex-col gap-2">
                 <h1 className="text-white text-xl font-extrabold">
                   {project.title}
                 </h1>
                 <span className="font-normal">{project.desc}</span>
-                <span className="mt-5 text-sm text-slate-300 font-bold">
-                  {" "}
-                  {project.tech}
-                </span>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.tech.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="text-xs text-slate-300 font-bold bg-slate-700 px-2 py-1 rounded"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           );
